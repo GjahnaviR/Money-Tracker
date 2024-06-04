@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
-mongoose.connect('mongodb+srv://JahnaviReddyGowru:9949650712@cluster0.qktqr8z.mongodb.net/MoneyList')
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.qktqr8z.mongodb.net/MoneyList')
 var db = mongoose.connection
 db.on('error', ()=> console.log("Error in connecting to the Database"))
 db.once('open', () => console.log("Connected to Database"))
